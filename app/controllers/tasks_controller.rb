@@ -19,8 +19,7 @@ class TasksController < ApplicationController
 
   def edit
     @task = Task.find params[:id]
-    redirect_to tasks_path
-  end
+    end
 
   def update
     @task = Task.find params[:id]
@@ -45,6 +44,12 @@ class TasksController < ApplicationController
 
     redirect_to tasks_path
   end
+
+  def destroy_multiple
+    Task.where(id: params[:tasks]).destroy_all
+    redirect_to tasks_path
+  end
+
 end
 
 

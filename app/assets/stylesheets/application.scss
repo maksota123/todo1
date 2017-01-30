@@ -22,17 +22,27 @@ body {front-size: 1.75em}
 .task {
   margin-bottom: 1em;
 
-  .action {opacity: 0;}
+  /*.action {opacity: 0;}
 
   &:hover .action {
     opacity: 1;
     transition: opacity 0.5s ease;
-  }
+  }*/
 }
 
+.taskwrapper {
+	margin-left: 20px;
+	display: block;
+}
 
+	input[type="checkbox"] {
+		float: left;
+	}
 
-
+ul{
+	list-style-type:none;
+	padding-left:0;
+}
 
 .priority_1{color: #009090}
 .priority_2{color: #c09000}
