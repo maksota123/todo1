@@ -21,6 +21,11 @@ end
 
 gem 'puma', '~> 3.0'
 gem 'listen', '~> 3.1.5'
+	
+group :development, :test do
+	gem 'rspec-rails', '~> 3.5'
+	gem 'factory_girl'
+end
 
 
 group :development, :test do
