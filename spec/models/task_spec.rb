@@ -13,5 +13,5 @@ RSpec.describe Task, type: :model do
 
   it 'is not valid with a title longer than 100 symbols' do
     task = Task.new(title: 'a' * 101)
-end
+    end
 end
